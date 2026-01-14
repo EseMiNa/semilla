@@ -1,12 +1,31 @@
 body {
     margin: 0;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #D2B48C;
+    padding: 12px 24px;
 }
+
+.nav a{
+    text-decoration: none;
+    color: #2F4F4F;
+    font-weight: 500;
+}
+
+nav a:not(.logo) {
+    margin-left: 20px;
+}
+
+nav a:hover {
+  color: #6B8E23;
+}
+
+
+
 .logo img {
     height: 45px;
     width: auto;
@@ -19,12 +38,14 @@ font-family: "Georgia", "Times New Roman", serif;
 color: #2F4F4F;
 padding: 60px 20px;
 }
+
 .hero-image {
     max-width: 600px;
     width: 100%;
     height: auto;
     margin: auto;
 }
+
 p {
  font-family: "Georgia", "Times New Roman", serif;
 color: #2F4F4F;   

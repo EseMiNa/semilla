@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 40px 20px;
+    background-color: #FFEBCD;
+    margin: 0;
+}
+
+.oracion-header h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2F4F4F;
+}
+
+.oracion form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+    
+.oracion label{
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.oracion input,
+.oracion textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.oracion button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #2F4F4F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.oracion button:hover{
+    background-color: #6B8E23;
+}
