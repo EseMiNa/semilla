@@ -20,11 +20,24 @@ nav a:not(.logo) {
     margin-left: 20px;
 }
 
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #6B8E23;
+  transition: width 0.3s ease;
+}
+
 nav a:hover {
   color: #6B8E23;
 }
 
-
+nav a:hover::after {
+  width: 100%;
+}
 
 .logo img {
     height: 45px;
@@ -46,7 +59,60 @@ padding: 60px 20px;
     margin: auto;
 }
 
+.hero button{
+    margin-top: 20px;
+    width: 35%;
+    padding: 12px;
+    background-color: #2F4F4F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero button:hover{
+    background-color: #6B8E23;
+}
+
 p {
  font-family: "Georgia", "Times New Roman", serif;
 color: #2F4F4F;   
+}
+
+.site-footer{
+    background-color: #D2B48C;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a{
+    position: relative;
+    color: #2F4F4F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #6B8E23;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
 }
