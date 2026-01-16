@@ -22,6 +22,7 @@ img {
 .nav {
     width: 100%;
     background-color: #F1E3CC;
+    padding: 12px 0;
 }
 
 .nav-inner{
@@ -32,6 +33,7 @@ img {
 
 .nav-links{
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
@@ -43,7 +45,7 @@ img {
     transition: all 0.3s, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-nav a::after {
+nav a:not(.nav-cta)::after {
   content: "";
   position: absolute;
   left: 0;
@@ -54,12 +56,37 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
+nav a:not(.nav-cta):hover::after {
+  width: 100%;
+}
+
 nav a:hover {
   color: #6B8E23;
 }
 
-nav a:hover::after {
-  width: 100%;
+.nav-cta {
+    display: inline-block;
+  padding: 8px 18px;
+  background-color: #2F4F4F;
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav a.nav-cta {
+  color: white;
+}
+
+.nav a.nav-cta:hover {
+  color: white;
+}
+
+/* Hover */
+.nav-cta:hover {
+  background-color: #6B8E23;
+  color: white;
 }
 
 .logo img {
@@ -162,7 +189,9 @@ h3{
 }
 
 /* Botón CTA */
-.hero button {
+.hero-button {
+    text-decoration: none;
+    display: inline-block;
   margin-top: 30px;
   padding: 14px 36px;
   background-color: #2F4F4F;
@@ -175,7 +204,7 @@ h3{
   transition: all 0.3s ease;
 }
 
-.hero button:hover {
+.hero-button:hover {
   background-color: #6B8E23;
   transform: translateY(-2px);
 }
